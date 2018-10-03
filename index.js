@@ -63,6 +63,17 @@ app.get('/about', (req,res) => {
 });
 
 
+app.get('/portfolio', (req, res) => {
+
+   res.render('work.hbs', {
+
+      titel: "Our work space"
+
+   });
+
+});
+
+
 app.get('/wrong', (req,res) => {
 
    res.send({errMsg: 'this page does nt exist'});
